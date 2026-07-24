@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | Dream Decorations</title>
+    <meta name="description" content="View items in your Dream Decorations shopping cart, adjust item quantities, apply promo codes, and calculate order total.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="top-bar">
+        Free Express Worldwide Delivery on Orders Over $150 | Use Code <strong>DREAM10</strong> for 10% Off
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="site-header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="brand-logo">
+                    DREAM <span>DECORATIONS</span>
+                </a>
+
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="shop.html" class="nav-link">Shop</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+
+                <div class="header-actions">
+                    <button class="theme-toggle-btn" aria-label="Toggle Dark Mode" title="Toggle Dark Mode">🌙</button>
+                    <a href="cart.html" class="cart-icon-btn" aria-label="Shopping Cart">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4H6zM3 6h18M16 10a4 4 0 01-8 0"/>
+                        </svg>
+                        <span class="cart-badge">0</span>
+                    </a>
+
+                    <div class="mobile-nav-toggle" id="mobile-drawer-toggle" aria-label="Toggle Navigation Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer & Backdrop -->
+    <div class="drawer-backdrop" id="drawer-backdrop"></div>
+    <div class="mobile-nav-drawer" id="mobile-drawer">
+        <div class="drawer-header">
+            <a href="index.html" class="brand-logo" style="font-size: 1.2rem;">DREAM <span>DECOR</span></a>
+            <button class="theme-toggle-btn" aria-label="Toggle Dark Mode" title="Toggle Dark Mode">🌙</button>
+            <button class="drawer-close" id="mobile-drawer-close" aria-label="Close menu">✕</button>
+        </div>
+        <nav class="mobile-nav-links">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="shop.html" class="mobile-nav-link">Shop Collection</a>
+            <a href="about.html" class="mobile-nav-link">Our Story</a>
+            <a href="contact.html" class="mobile-nav-link">Contact Us</a>
+            <a href="cart.html" class="mobile-nav-link active">Shopping Cart</a>
+        </nav>
+    </div>
+
+    <!-- Page Header Banner -->
+    <section class="page-header">
+        <div class="container">
+            <span class="section-tag">Your Sanctuary Selection</span>
+            <h1 class="section-title">Shopping Cart</h1>
+        </div>
+    </section>
+
+    <!-- Cart Layout Container -->
+    <main class="section">
+        <div class="container">
+            <div class="cart-layout">
+                <!-- Cart Items Table Container Left -->
+                <div id="cart-items-container">
+                    <!-- Rendered dynamically by main.js -->
+                </div>
+
+                <!-- Order Summary Sidebar Right -->
+                <div id="cart-summary-container">
+                    <!-- Rendered dynamically by main.js -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="brand-logo">DREAM <span>DECORATIONS</span></a>
+                    <p>A luxury online home decor studio offering curated lighting, sculptural vases, relief wall art, and architectural accessories for refined interiors.</p>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop Catalogue</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Advisory</a></li>
+                        <li><a href="cart.html">Shopping Cart</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="shop.html?category=Lighting">Lighting</a></li>
+                        <li><a href="shop.html?category=Vases">Vases</a></li>
+                        <li><a href="shop.html?category=Wall%20D%C3%A9cor">Wall Décor</a></li>
+                        <li><a href="shop.html?category=Sculptures">Sculptures</a></li>
+                        <li><a href="shop.html?category=Accessories">Accessories</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Client Advisory</h4>
+                    <ul class="footer-links">
+                        <li><span>Showroom: 742 Madison Ave, New York</span></li>
+                        <li><span>Phone: +1 (800) 555-DREAM</span></li>
+                        <li><span>Email: concierges@dreamdecorations.com</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dream Decorations. College Web Development Prototype Project. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

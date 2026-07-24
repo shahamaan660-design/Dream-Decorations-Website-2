@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Decorations | Luxury Home Décor & Statement Interiors</title>
+    <meta name="description" content="Discover curated decorative lighting, hand-crafted vases, architectural wall art, and luxury home accessories at Dream Decorations.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="top-bar">
+        Free Express Worldwide Delivery on Orders Over $150 | Use Code <strong>DREAM10</strong> for 10% Off
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="site-header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="brand-logo">
+                    DREAM <span>DECORATIONS</span>
+                </a>
+
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="shop.html" class="nav-link">Shop</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+
+                <div class="header-actions">
+                    <button class="theme-toggle-btn" aria-label="Toggle Dark Mode" title="Toggle Dark Mode">🌙</button>
+                    <a href="cart.html" class="cart-icon-btn" aria-label="Shopping Cart">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4H6zM3 6h18M16 10a4 4 0 01-8 0"/>
+                        </svg>
+                        <span class="cart-badge">0</span>
+                    </a>
+
+                    <div class="mobile-nav-toggle" id="mobile-drawer-toggle" aria-label="Toggle Navigation Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer & Backdrop -->
+    <div class="drawer-backdrop" id="drawer-backdrop"></div>
+    <div class="mobile-nav-drawer" id="mobile-drawer">
+        <div class="drawer-header">
+            <a href="index.html" class="brand-logo" style="font-size: 1.2rem;">DREAM <span>DECOR</span></a>
+            <button class="theme-toggle-btn" aria-label="Toggle Dark Mode" title="Toggle Dark Mode">🌙</button>
+            <button class="drawer-close" id="mobile-drawer-close" aria-label="Close menu">✕</button>
+        </div>
+        <nav class="mobile-nav-links">
+            <a href="index.html" class="mobile-nav-link active">Home</a>
+            <a href="shop.html" class="mobile-nav-link">Shop Collection</a>
+            <a href="about.html" class="mobile-nav-link">Our Story</a>
+            <a href="contact.html" class="mobile-nav-link">Contact Us</a>
+            <a href="cart.html" class="mobile-nav-link">Shopping Cart</a>
+        </nav>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="assets/images/hero-bg.jpg" alt="Luxury living room interior with Dream Decorations statement pieces" class="hero-bg">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-subtitle">Curated Living Spaces</span>
+                    <h1 class="hero-title">Timeless Objects of Art & Comfort</h1>
+                    <p class="hero-text">Transform your living space with our handpicked collection of architectural lighting, sculptural ceramics, and bespoke interior accents.</p>
+                    <div class="hero-actions">
+                        <a href="shop.html" class="btn btn-gold">Shop Collection</a>
+                        <a href="about.html" class="btn btn-secondary">Our Philosophy</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Categories Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Explore Collections</span>
+                    <h2 class="section-title">Shop by Category</h2>
+                    <p class="section-desc">Carefully organized decorative objects designed to harmonize with modern architecture and elevated interiors.</p>
+                </div>
+
+                <div class="category-grid">
+                    <a href="shop.html?category=Lighting" class="category-card">
+                        <img src="assets/images/category-lighting.jpg" alt="Decorative Lighting" loading="lazy">
+                        <div class="category-overlay">
+                            <h3 class="category-name">Lighting</h3>
+                            <span class="category-count">Pendants & Floor Lamps</span>
+                        </div>
+                    </a>
+                    <a href="shop.html?category=Vases" class="category-card">
+                        <img src="assets/images/category-vases.jpg" alt="Ceramic Vases" loading="lazy">
+                        <div class="category-overlay">
+                            <h3 class="category-name">Vases</h3>
+                            <span class="category-count">Sculptural Stoneware</span>
+                        </div>
+                    </a>
+                    <a href="shop.html?category=Wall%20D%C3%A9cor" class="category-card">
+                        <img src="assets/images/category-wall-decor.jpg" alt="Wall Décor" loading="lazy">
+                        <div class="category-overlay">
+                            <h3 class="category-name">Wall Décor</h3>
+                            <span class="category-count">Relief Art & Mirrors</span>
+                        </div>
+                    </a>
+                    <a href="shop.html?category=Sculptures" class="category-card">
+                        <img src="assets/images/category-sculptures.jpg" alt="Art Sculptures" loading="lazy">
+                        <div class="category-overlay">
+                            <h3 class="category-name">Sculptures</h3>
+                            <span class="category-count">Bronze & Marble</span>
+                        </div>
+                    </a>
+                    <a href="shop.html?category=Accessories" class="category-card">
+                        <img src="assets/images/category-accessories.jpg" alt="Home Accessories" loading="lazy">
+                        <div class="category-overlay">
+                            <h3 class="category-name">Accessories</h3>
+                            <span class="category-count">Trays & Bookends</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section class="section" style="background-color: var(--color-bg-secondary);">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Handpicked Highlight</span>
+                    <h2 class="section-title">Featured Pieces</h2>
+                    <p class="section-desc">Our signature architectural designs and bestselling decorative elements.</p>
+                </div>
+
+                <div class="product-grid" id="featured-products-grid"></div>
+
+                <div style="text-align: center; margin-top: 3.5rem;">
+                    <a href="shop.html" class="btn btn-primary">View All Products</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Editorial Brand Story Section -->
+        <section class="section editorial-section">
+            <div class="container">
+                <div class="editorial-grid">
+                    <div class="editorial-image-wrap">
+                        <img src="assets/images/about-story.jpg" alt="Dream Decorations studio design aesthetic" loading="lazy">
+                    </div>
+                    <div class="editorial-content">
+                        <span class="section-tag">Design Philosophy</span>
+                        <h2 class="section-title">Where Form Meets Soul</h2>
+                        <p class="section-desc" style="text-align: left; margin: 0 0 1rem 0;">
+                            At Dream Decorations, we believe home decor is more than embellishment—it is an extension of identity and sanctuary. Each object in our sanctuary collection is chosen for its architectural integrity, materiality, and emotional resonance.
+                        </p>
+                        <blockquote class="editorial-quote">
+                            "True luxury is found in quiet craftsmanship, raw organic textures, and pieces that age gracefully over time."
+                        </blockquote>
+                        <a href="about.html" class="btn btn-gold" style="margin-top: 1rem;">Discover Our Story</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Arrivals Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Fresh Arrivals</span>
+                    <h2 class="section-title">Curated Collection</h2>
+                    <p class="section-desc">The latest architectural objects and artisanal home accents recently added to our catalog.</p>
+                </div>
+
+                <div class="product-grid" id="new-arrivals-grid"></div>
+            </div>
+        </section>
+
+        <!-- Service Benefits Grid -->
+        <section class="section" style="background-color: var(--color-bg-secondary); border-top: 1px solid var(--color-border);">
+            <div class="container">
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">✦</div>
+                        <h3 class="benefit-title">Artisanal Selection</h3>
+                        <p class="benefit-text">Every object is handpicked from master craftsmen and studio ateliers around the globe.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">◈</div>
+                        <h3 class="benefit-title">Uncompromising Quality</h3>
+                        <p class="benefit-text">Crafted from solid brass, Italian marble, high-fired ceramic, and natural linen.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🔒</div>
+                        <h3 class="benefit-title">White Glove Shipping</h3>
+                        <p class="benefit-text">Custom padded packaging ensures your fragile statement decor arrives in pristine condition.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">💬</div>
+                        <h3 class="benefit-title">Design Advisory</h3>
+                        <p class="benefit-text">Our interior specialists are available to provide bespoke styling guidance for your spaces.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Subscription Section -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-box">
+                    <span class="section-tag" style="color: var(--color-accent-gold);">Stay Connected</span>
+                    <h2>Join The Dream Journal</h2>
+                    <p>Receive exclusive invitations to rare product drops, interior design essays, and subscriber-only privileges.</p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Enter your email address..." required>
+                        <button type="submit" class="btn btn-gold">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="brand-logo">DREAM <span>DECORATIONS</span></a>
+                    <p>A luxury online home decor studio offering curated lighting, sculptural vases, relief wall art, and architectural accessories for refined interiors.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">IG</a>
+                        <a href="#" class="social-link" aria-label="Pinterest">PN</a>
+                        <a href="#" class="social-link" aria-label="Architectural Digest">AD</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop Catalogue</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Advisory</a></li>
+                        <li><a href="cart.html">Shopping Cart</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="shop.html?category=Lighting">Lighting</a></li>
+                        <li><a href="shop.html?category=Vases">Vases</a></li>
+                        <li><a href="shop.html?category=Wall%20D%C3%A9cor">Wall Décor</a></li>
+                        <li><a href="shop.html?category=Sculptures">Sculptures</a></li>
+                        <li><a href="shop.html?category=Accessories">Accessories</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Client Advisory</h4>
+                    <ul class="footer-links">
+                        <li><span>Showroom: 742 Madison Ave, New York</span></li>
+                        <li><span>Phone: +1 (800) 555-DREAM</span></li>
+                        <li><span>Email: concierges@dreamdecorations.com</span></li>
+                        <li><span>Mon - Fri: 9:00 AM - 6:00 PM EST</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dream Decorations. College Web Development Prototype Project. All rights reserved.</p>
+                <p>Designed with Vanilla HTML5, CSS3, and JavaScript.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Scripts -->
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

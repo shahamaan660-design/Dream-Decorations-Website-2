@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Dream Decorations Concierge</title>
+    <meta name="description" content="Get in touch with Dream Decorations client concierge team for order inquiries, trade partnerships, and interior styling consultations.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="top-bar">
+        Free Express Worldwide Delivery on Orders Over $150 | Use Code <strong>DREAM10</strong> for 10% Off
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="site-header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="brand-logo">
+                    DREAM <span>DECORATIONS</span>
+                </a>
+
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="shop.html" class="nav-link">Shop</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+
+                <div class="header-actions">
+                    <button class="theme-toggle-btn" aria-label="Toggle Dark Mode" title="Toggle Dark Mode">🌙</button>
+                    <a href="cart.html" class="cart-icon-btn" aria-label="Shopping Cart">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4H6zM3 6h18M16 10a4 4 0 01-8 0"/>
+                        </svg>
+                        <span class="cart-badge">0</span>
+                    </a>
+
+                    <div class="mobile-nav-toggle" id="mobile-drawer-toggle" aria-label="Toggle Navigation Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer & Backdrop -->
+    <div class="drawer-backdrop" id="drawer-backdrop"></div>
+    <div class="mobile-nav-drawer" id="mobile-drawer">
+        <div class="drawer-header">
+            <a href="index.html" class="brand-logo" style="font-size: 1.2rem;">DREAM <span>DECOR</span></a>
+            <button class="theme-toggle-btn" aria-label="Toggle Dark Mode" title="Toggle Dark Mode">🌙</button>
+            <button class="drawer-close" id="mobile-drawer-close" aria-label="Close menu">✕</button>
+        </div>
+        <nav class="mobile-nav-links">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="shop.html" class="mobile-nav-link">Shop Collection</a>
+            <a href="about.html" class="mobile-nav-link">Our Story</a>
+            <a href="contact.html" class="mobile-nav-link active">Contact Us</a>
+            <a href="cart.html" class="mobile-nav-link">Shopping Cart</a>
+        </nav>
+    </div>
+
+    <!-- Page Header Banner -->
+    <section class="page-header">
+        <div class="container">
+            <span class="section-tag">Client Concierge</span>
+            <h1 class="section-title">Get In Touch</h1>
+            <p class="section-desc">Our design advisors and customer specialists are available to assist with product specifications, custom trade orders, or styling guidance.</p>
+        </div>
+    </section>
+
+    <!-- Contact Main Section -->
+    <main class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Info Cards Left Column -->
+                <div class="contact-info-cards">
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <div>
+                            <h3 class="footer-title" style="color: var(--color-text-primary); margin-bottom: 0.25rem;">Flagship Showroom</h3>
+                            <p class="text-muted" style="font-size: 0.9rem;">742 Madison Avenue<br>New York, NY 10065, USA</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">📞</div>
+                        <div>
+                            <h3 class="footer-title" style="color: var(--color-text-primary); margin-bottom: 0.25rem;">Direct Concierge Phone</h3>
+                            <p class="text-muted" style="font-size: 0.9rem;">+1 (800) 555-DREAM<br>Mon - Fri, 9am - 6pm EST</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">✉️</div>
+                        <div>
+                            <h3 class="footer-title" style="color: var(--color-text-primary); margin-bottom: 0.25rem;">Electronic Mail</h3>
+                            <p class="text-muted" style="font-size: 0.9rem;">concierges@dreamdecorations.com<br>trade@dreamdecorations.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">🚚</div>
+                        <div>
+                            <h3 class="footer-title" style="color: var(--color-text-primary); margin-bottom: 0.25rem;">White Glove Shipping</h3>
+                            <p class="text-muted" style="font-size: 0.9rem;">Insured climate-controlled transport for fragile ceramics, glass, and bronze objects.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Right Column -->
+                <div class="contact-form-card">
+                    <h2 style="font-size: 1.75rem; margin-bottom: 0.5rem;">Send An Enquiry</h2>
+                    <p class="text-muted" style="margin-bottom: 2rem; font-size: 0.95rem;">Fill out the form below. All enquiries are reviewed within 24 business hours.</p>
+
+                    <form id="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="contact-name" class="form-label">Full Name *</label>
+                            <input type="text" id="contact-name" class="form-control" placeholder="e.g. Victoria Sterling">
+                            <div class="invalid-feedback">Please enter your full name.</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-email" class="form-label">Email Address *</label>
+                            <input type="email" id="contact-email" class="form-control" placeholder="name@example.com">
+                            <div class="invalid-feedback">Please enter a valid email address.</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-subject" class="form-label">Subject / Inquiry Type *</label>
+                            <input type="text" id="contact-subject" class="form-control" placeholder="e.g. Product Inquiry / Styling Consultation">
+                            <div class="invalid-feedback">Please specify a subject for your enquiry.</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-message" class="form-label">Message Details *</label>
+                            <textarea id="contact-message" class="form-control" rows="5" placeholder="How can our design team assist you?"></textarea>
+                            <div class="invalid-feedback">Message must be at least 10 characters long.</div>
+                        </div>
+
+                        <button type="submit" class="btn btn-gold btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FAQ Accordion Section -->
+    <section class="section" style="background-color: var(--color-bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Common Questions</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="faq-accordion">
+                <div class="faq-item open">
+                    <div class="faq-question">
+                        <span>How are ceramic and fragile items packaged?</span>
+                        <span>✦</span>
+                    </div>
+                    <div class="faq-answer">
+                        All ceramic vessels, glass lamps, and marble sculptures are packed in high-density custom foam enclosures inside reinforced double-wall corrugated crates to guarantee damage-free transit.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What is your return policy?</span>
+                        <span>✦</span>
+                    </div>
+                    <div class="faq-answer">
+                        We offer a complimentary 30-day trial for all unused decorative items in their original packaging. Simply contact our concierge to schedule a white-glove courier return collection.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you offer trade discounts for interior architects?</span>
+                        <span>✦</span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, our Dream Trade Program offers exclusive tiered pricing, dedicated account managers, and custom lead-time coordination for licensed interior designers and architectural firms.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Are the brass and marble materials genuine?</span>
+                        <span>✦</span>
+                    </div>
+                    <div class="faq-answer">
+                        Absolutely. We use 100% solid unlacquered brass and natural quarry-mined Italian marble (such as Calacatta Viola and Nero Marquina). Every piece features unique organic stone veining.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="brand-logo">DREAM <span>DECORATIONS</span></a>
+                    <p>A luxury online home decor studio offering curated lighting, sculptural vases, relief wall art, and architectural accessories for refined interiors.</p>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop Catalogue</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Advisory</a></li>
+                        <li><a href="cart.html">Shopping Cart</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="shop.html?category=Lighting">Lighting</a></li>
+                        <li><a href="shop.html?category=Vases">Vases</a></li>
+                        <li><a href="shop.html?category=Wall%20D%C3%A9cor">Wall Décor</a></li>
+                        <li><a href="shop.html?category=Sculptures">Sculptures</a></li>
+                        <li><a href="shop.html?category=Accessories">Accessories</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Client Advisory</h4>
+                    <ul class="footer-links">
+                        <li><span>Showroom: 742 Madison Ave, New York</span></li>
+                        <li><span>Phone: +1 (800) 555-DREAM</span></li>
+                        <li><span>Email: concierges@dreamdecorations.com</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dream Decorations. College Web Development Prototype Project. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
