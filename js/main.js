@@ -145,8 +145,8 @@ function createProductCardMarkup(product) {
         : '';
 
     const priceMarkup = product.originalPrice
-        ? `$${product.price.toFixed(2)} <span class="original-price">$${product.originalPrice.toFixed(2)}</span>`
-        : `$${product.price.toFixed(2)}`;
+        ? `€${product.price.toFixed(2)} <span class="original-price">€${product.originalPrice.toFixed(2)}</span>`
+        : `€${product.price.toFixed(2)}`;
 
     return `
         <article class="product-card">
@@ -350,8 +350,8 @@ function initProductDetailsPage() {
 
     // Render Product Details
     const priceMarkup = product.originalPrice
-        ? `$${product.price.toFixed(2)} <span class="original-price">$${product.originalPrice.toFixed(2)}</span>`
-        : `$${product.price.toFixed(2)}`;
+        ? `€${product.price.toFixed(2)} <span class="original-price">€${product.originalPrice.toFixed(2)}</span>`
+        : `€${product.price.toFixed(2)}`;
 
     const featuresListMarkup = product.details
         ? product.details.map(detail => `<li>${detail}</li>`).join('')
@@ -512,7 +512,7 @@ function initCartPage() {
                         </div>
                     </div>
                 </td>
-                <td>$${item.price.toFixed(2)}</td>
+                <td>€${item.price.toFixed(2)}</td>
                 <td>
                     <div class="qty-control">
                         <button class="qty-btn" onclick="updateQuantity(${item.id}, ${item.quantity - 1})">-</button>
@@ -520,7 +520,7 @@ function initCartPage() {
                         <button class="qty-btn" onclick="updateQuantity(${item.id}, ${item.quantity + 1})">+</button>
                     </div>
                 </td>
-                <td><strong>$${(item.price * item.quantity).toFixed(2)}</strong></td>
+                <td><strong>€${(item.price * item.quantity).toFixed(2)}</strong></td>
                 <td>
                     <button class="remove-btn" title="Remove Item" onclick="removeFromCart(${item.id})">✕</button>
                 </td>
@@ -566,7 +566,7 @@ function initCartPage() {
                     </div>
                 ` : `
                     <div style="font-size: 0.85rem; color: var(--color-text-muted);">
-                        Add <strong>$${summary.freeShippingRemaining}</strong> more for Free Shipping
+                        Add <strong>€${summary.freeShippingRemaining}</strong> more for Free Shipping
                     </div>
                     <div class="shipping-progress-bar">
                         <div class="shipping-progress-fill" style="width: ${Math.min(100, (summary.subtotal / 150) * 100)}%;"></div>
@@ -575,13 +575,13 @@ function initCartPage() {
 
                 <div class="summary-row">
                     <span>Subtotal (${summary.itemCount} items):</span>
-                    <span>$${summary.subtotal}</span>
+                    <span>€${summary.subtotal}</span>
                 </div>
 
                 ${parseFloat(summary.discount) > 0 ? `
                     <div class="summary-row" style="color: var(--color-success);">
                         <span>Promo Discount (10% Off):</span>
-                        <span>-$${summary.discount}</span>
+                        <span>-€${summary.discount}</span>
                     </div>
                 ` : ''}
 
@@ -592,12 +592,12 @@ function initCartPage() {
 
                 <div class="summary-row">
                     <span>Estimated Tax (8%):</span>
-                    <span>$${summary.tax}</span>
+                    <span>€${summary.tax}</span>
                 </div>
 
                 <div class="summary-row summary-total-row">
                     <span>Total:</span>
-                    <span class="text-gold">$${summary.total}</span>
+                    <span class="text-gold">€${summary.total}</span>
                 </div>
 
                 <form id="promo-code-form" class="promo-form">
@@ -656,7 +656,7 @@ function initCartPage() {
                     </div>
                     <div class="specs-item">
                         <span class="specs-label">Order Total:</span>
-                        <span class="specs-value" style="color: var(--color-accent-gold); font-weight: 700;">$${summary.total}</span>
+                        <span class="specs-value" style="color: var(--color-accent-gold); font-weight: 700;">€${summary.total}</span>
                     </div>
                     <div class="specs-item">
                         <span class="specs-label">Mode:</span>

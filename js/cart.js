@@ -121,7 +121,7 @@ function getCartSummary(discountCode = '') {
 
     return {
         subtotal: subtotal.toFixed(2),
-        shipping: shipping === 0 ? 'FREE' : `$${shipping.toFixed(2)}`,
+        shipping: shipping === 0 ? 'FREE' : `€${shipping.toFixed(2)}`,
         rawShipping: shipping,
         discount: discount.toFixed(2),
         tax: tax.toFixed(2),
